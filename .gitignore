@@ -1,0 +1,13 @@
+.DS_Store
+.coverage*
+.vscode
+
+package-lock.json
+coverage.json
+log-deploy.txt
+log-interactions.txt
+
+# directory
+build/
+coverage/
+node_modules/

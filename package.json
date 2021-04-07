@@ -1,0 +1,39 @@
+{
+  "name": "@massnetorg/wrappedmass",
+  "version": "1.0.0",
+  "description": "Contracts for MASS",
+  "main": "truffle-config.js",
+  "scripts": {
+    "migrate": "truffle migrate",
+    "compile": "rm -r build && truffle compile",
+    "flatten": "scripts/flatten.sh",
+    "test": "truffle test",
+    "coverage": "NETWORK_ID=1998 RPC_NODE_URI=http://127.0.0.1:8555 COVERAGE=true truffle run coverage",
+    
+    "deploy": "truffle migrate --network=$NETWORK --reset"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.0",
+    "@truffle/hdwallet-provider": "^1.2.2"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.3.0",
+    "solidity-coverage": "^0.7.16",
+    "truffle": "^5.2.0",
+    "truffle-flattener": "^1.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/massnetorg/Wrapped-MASS.git"
+  },
+  "keywords": [
+    "mass",
+    "ethereum",
+    "bsc",
+    "wmass"
+  ],
+  "author": "massnetorg",
+  "license": "MIT"
+}
